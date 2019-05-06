@@ -1,7 +1,7 @@
 import React from 'react';
-import bitcoin from './images/bitcoin.ico'
-import litecoin from './images/litecoin.ico'
-import ethereum from './images/ethereum.ico'
+import bitcoin from '/public/images/bitcoin.ico'
+import litecoin from '/public/images/litecoin.ico'
+import ethereum from '/public/images/ethereum.ico'
 import './DataDivs.css';
 
 const dataDivs = props => (
