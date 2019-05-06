@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/coinui/static/css/main.584f321a.chunk.css",
+    "main.js": "/coinui/static/js/main.17518bff.chunk.js",
+    "main.js.map": "/coinui/static/js/main.17518bff.chunk.js.map",
+    "runtime~main.js": "/coinui/static/js/runtime~main.1ab53f73.js",
+    "runtime~main.js.map": "/coinui/static/js/runtime~main.1ab53f73.js.map",
+    "static/js/2.b41502e9.chunk.js": "/coinui/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/coinui/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/coinui/index.html",
+    "precache-manifest.f1244fef42ad8e821574cd1080efb048.js": "/coinui/precache-manifest.f1244fef42ad8e821574cd1080efb048.js",
+    "service-worker.js": "/coinui/service-worker.js",
+    "static/css/main.584f321a.chunk.css.map": "/coinui/static/css/main.584f321a.chunk.css.map",
+    "static/media/logo.svg": "/coinui/static/media/logo.5d5d9eef.svg"
+  }
+}
