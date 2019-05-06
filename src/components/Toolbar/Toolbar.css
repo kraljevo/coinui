@@ -3,7 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #282c34;
+    background-color: #c46bff;
+    background-image: linear-gradient(to bottom right, #b547ff, #5f1bff);
     height: 60px;
     font-family: Palatino, sans-serif;
 }
