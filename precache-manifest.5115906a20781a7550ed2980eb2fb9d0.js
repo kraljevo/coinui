@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8722d9b220799d55fe06e0a95c67ba61",
+    "revision": "0a68b5a5d66eb3972114bf0be2722979",
     "url": "/coinui/index.html"
   },
   {
-    "revision": "50ebccd0cf9287ce9fdf",
-    "url": "/coinui/static/css/main.19f073ee.chunk.css"
+    "revision": "cb810b5bc37345d6ad72",
+    "url": "/coinui/static/css/main.babb322f.chunk.css"
   },
   {
     "revision": "efc3d230fd1e1b3caa34",
     "url": "/coinui/static/js/2.bbcd3f81.chunk.js"
   },
   {
-    "revision": "50ebccd0cf9287ce9fdf",
-    "url": "/coinui/static/js/main.1a698b09.chunk.js"
+    "revision": "cb810b5bc37345d6ad72",
+    "url": "/coinui/static/js/main.0e1adf6b.chunk.js"
   },
   {
     "revision": "94ee1c98c221f4991df2",
