@@ -13,19 +13,19 @@ class DataDivs extends React.Component {
           name: "Bitcoin",
           icon: <img src={bitcoin} alt="" />,
           amount: 2,
-          value: 12000
+          value: 6000 //value for one coin
         }, {
           id: 2,
           name: "Litecoin",
           icon: <img src={litecoin} alt="" />,
           amount: 10,
-          value: 5000
+          value: 500 //value for one coin
         }, {
           id: 3,
           name: "Ethereum",
           icon: <img src={ethereum} alt="" />,
-          amount: 10,
-          value: 1000
+          amount: 30,
+          value: 100 //value for one coin
         }]
       }
     }
@@ -64,7 +64,7 @@ class DataDivs extends React.Component {
                 {props.coin.amount}
             </div>
             <div className="row-value">
-                ${props.coin.value}
+                ${props.coin.amount * props.coin.value}
             </div>
         </div>
     );
