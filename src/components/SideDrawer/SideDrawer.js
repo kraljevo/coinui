@@ -12,6 +12,7 @@ const sideDrawer = props => {
     <nav className={drawerClasses}>
         <ul>
             <li><a href="/">Send Coins</a></li>
+            <li><a href="/">Change Wallets</a></li>
         </ul>
     </nav>
     )
