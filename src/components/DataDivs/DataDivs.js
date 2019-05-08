@@ -29,6 +29,7 @@ class DataDivs extends React.Component {
         }]
       }
     }
+
     render() {
       let rows = this.state.coin.map(coin => {
         return <CoinRow key = {
@@ -39,6 +40,7 @@ class DataDivs extends React.Component {
         }
         />
       })
+
       return (
         <div className="coin-list">
             <div className="list-header">

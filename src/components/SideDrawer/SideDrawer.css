@@ -28,16 +28,19 @@
     margin: 0.5rem 0;
 }
 
-.side-drawer a {
-    font-size: 1.2rem;
+.side-drawer button {
+    background:none!important;
+    color:#5f1bff;
     font-weight: bold;
-    color: #282c34;
-    text-decoration: none;
+    font-size: 1.5em;
+    border:none; 
+    padding:0!important;
+    cursor: pointer;
 }
 
-.side-drawer a:hover,
-.side-drawer a:active {
-    color: #4e586b
+.side-drawer button:hover,
+.side-drawer button:active {
+    color: #000000
 }
 
 @media (min-width: 769px) {

@@ -5,7 +5,7 @@ import Backdrop from './components/Backdrop/Backdrop';
 import DataDivs from './components/DataDivs/DataDivs';
 import './App.css'
 
-class app extends Component {
+class App extends Component {
   state = {
     sideDrawerOpen: false
   };
@@ -25,6 +25,7 @@ class app extends Component {
     if(this.state.sideDrawerOpen){
       backdrop = <Backdrop click={this.backdropClickHandler}/>
     }
+        
     return (
       <div className="App">
         <div style={{height: '100%'}}>
@@ -35,7 +36,7 @@ class app extends Component {
         <div className="App-content">
           <div className="dollar-value">
             <h4>Total USD Balance</h4>
-            <h2>$123.45</h2>
+            <h2>$20,000.00</h2>
           </div>
           <DataDivs />
         </div>
@@ -44,4 +45,4 @@ class app extends Component {
   }
 }
 
-export default app;
+export default App;

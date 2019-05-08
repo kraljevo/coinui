@@ -1,11 +1,10 @@
 import React from 'react';
-import SendDrawer from '../SendDrawer/SendDrawer'
-import './SideDrawer.css';
+import './SendDrawer.css';
 
-const sideDrawer = props => {
-    let drawerClasses = ['side-drawer']
+const SendDrawer = props => {
+    let drawerClasses = ['send-drawer']
     if(props.show) {
-        drawerClasses = 'side-drawer open'
+        drawerClasses = 'send-drawer open'
     }
 
     return (
@@ -18,4 +17,5 @@ const sideDrawer = props => {
     )
 };
 
-export default sideDrawer;
+
+export default SendDrawer;
