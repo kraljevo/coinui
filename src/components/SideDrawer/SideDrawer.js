@@ -3,7 +3,7 @@ import MainDrawer from './MainDrawer/MainDrawer';
 import SendDrawer from './SendDrawer/SendDrawer';
 import ReceiveDrawer from './ReceiveDrawer/ReceiveDrawer';
 import WalletDrawer from './WalletDrawer/WalletDrawer';
-import NetworkDrawer from './ReceiveDrawer/ReceiveDrawer';
+import NetworkDrawer from './NetworkDrawer/NetworkDrawer';
 import './SideDrawer.css';
 
 const SideDrawer = props => {

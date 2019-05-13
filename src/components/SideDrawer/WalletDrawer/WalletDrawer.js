@@ -2,10 +2,10 @@ import React from 'react';
 import './WalletDrawer.css';
 
 const WalletDrawer = props => {
-    let backBtn = '< Back';
+    let backBtn = 'Back';
 
         return (
-            <div>
+            <div className="container">
                 <button className="back-button" onClick={props.click}>
                     {backBtn}
                 </button>

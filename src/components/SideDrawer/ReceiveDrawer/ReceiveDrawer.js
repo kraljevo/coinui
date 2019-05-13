@@ -2,27 +2,20 @@ import React from 'react';
 import './ReceiveDrawer.css';
 
 const ReceiveDrawer = props => {
-    let backBtn = '< Back';
+    let backBtn = 'Back';
 
     return (
-        <div >
+        <div className="container">
             <button className="back-button" onClick={props.click}>
                 {backBtn}
             </button>
             <form className="receive-drawer">
                 <div>
-                    <div className="form-item">Coin Type:</div>
-                    <select name="send-name">
-                        <option value="bitcoin">Bitcoin</option>
-                        <option value="litecoin">Litecoin</option>
-                        <option value="ethereum">Ethereum</option>
-                    </select>
-                    <div className="form-item">Amount:</div>
-                    <input type="text" name="send-amount" />
-                    <div className="form-item">To Address:</div>
-                    <input type="text" name="send-address" />
+                    <div className="rec-item">Coin Type: {props.coinType}</div>
+                    <div className="rec-item">Amount: {props.coinAmount}</div>
+                    <div className="rec-item">From: {props.fromAddress}</div>
                 </div>
-                <input type="submit" />
+                <input className="rec-submit" type="submit" value="OK"/>
             </form>
         </div>
     )

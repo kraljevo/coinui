@@ -1,5 +1,9 @@
 .wallet-drawer {
-    background-color: white;
+    margin-left: 2em;
+}
+
+.container {
+    width: 65%;
     margin-left: 2em;
 }
 
@@ -11,23 +15,30 @@
 }
 
 .back-button {
-    background:none!important;
-    color:#5f1bff;
-    font-size: 1.25em;
-    border:none; 
-    padding:0!important;
+    margin: 10px auto;
+    min-width: 25%;
+    height: 25px;
+    color: white;
+    background-color: #5f1bff;
+    border: none;
+    border-radius: 7px;
+    padding: 0px 5px;
     cursor: pointer;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 1em;
 }
 
 .wallet-drawer button {
-    background:none!important;
-    color:#5f1bff;
-    font-size: 1.25em;
-    border:none; 
-    padding:0!important;
+    margin: 10px auto;
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: #5f1bff;
+    border: none;
+    border-radius: 7px;
     cursor: pointer;
-    margin-bottom: 0.75em;
+}
+
+.back-button:hover,
+.send-btn:hover,
+.wallet-drawer button:hover {
+    background: #5f1bff8f
 }
