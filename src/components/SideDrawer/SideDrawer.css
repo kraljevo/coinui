@@ -16,35 +16,11 @@
     transform: translateX(0);
 }
 
-.side-drawer ul {
-    height: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.side-drawer li {
-    margin: 0.5rem 0;
-}
-
-.side-drawer button {
-    background:none!important;
-    color:#5f1bff;
+.company-name {
+    color: white;
+    background-image: linear-gradient(to bottom right, #b547ff, #5f1bff);
     font-weight: bold;
-    font-size: 1.5em;
-    border:none; 
-    padding:0!important;
-    cursor: pointer;
-}
-
-.side-drawer button:hover,
-.side-drawer button:active {
-    color: #000000
-}
-
-@media (min-width: 769px) {
-    .side-drawer {
-        display: none;
-    }
+    font-size: 4em;
+    letter-spacing: 5px;
+    text-align: left;
 }

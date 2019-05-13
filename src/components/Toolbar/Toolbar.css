@@ -3,7 +3,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #c46bff;
     background-image: linear-gradient(to bottom right, #b547ff, #5f1bff);
     height: 60px;
     font-family: Palatino, sans-serif;
@@ -12,12 +11,8 @@
 .toolbar-logo {
     margin-left: 4rem;
     font-size: calc(10px + 2vmin);
-}
-
-.toolbar-logo a {
     color: white;
     text-decoration: none;
-    font-size: calc(10px + 2vmin);
 }
 
 .toolbar-navigation {

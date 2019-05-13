@@ -1,0 +1,23 @@
+.main-drawer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-drawer li {
+    margin: 1px 0;
+}
+
+.main-drawer button {
+    background:none!important;
+    color:#5f1bff;
+    font-size: 1.5em;
+    border:none; 
+    padding:0!important;
+    cursor: pointer;
+}
+
+.main-drawer button:hover {
+    color: #000000
+}
