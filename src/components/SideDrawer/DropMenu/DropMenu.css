@@ -1,0 +1,28 @@
+.drop-menu {
+    display: none;
+}
+
+.drop-menu.open {
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    padding: 5px 5px;
+    min-height: auto;
+    z-index: 200;
+}
+
+.drop-menu button {
+    display: list-item;
+    font-weight: bold;
+    background:none!important;
+    color:#5f1bff;
+    font-size: 1.25em;
+    border:none; 
+    padding:0!important;
+    cursor: pointer;
+}

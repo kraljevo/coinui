@@ -2,14 +2,21 @@ import React from 'react';
 import './WalletDrawer.css';
 
 const WalletDrawer = props => {
+    let backBtn = '< Back';
+
         return (
-            <nav className="wallet-drawer">
-            <ul>
-                <li><button onClick={props.wallets[0].name}>Send Coins</button></li>
-                <li><button onClick={props.wallets[1].name}>Receive Coins</button></li>
-                <li><button onClick={props.wallets[2].name}>Change Wallet</button></li>
-            </ul>
-        </nav>
+            <div>
+                <button className="back-button" onClick={props.click}>
+                    {backBtn}
+                </button>
+                <nav className="wallet-drawer">
+                    <ul>
+                        <li><button>{props.wallets[0].name}</button></li>
+                        <li><button>{props.wallets[1].name}</button></li>
+                        <li><button>{props.wallets[2].name}</button></li>
+                    </ul>
+                </nav>
+            </div>
         )
     }
 

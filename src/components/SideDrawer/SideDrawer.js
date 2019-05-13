@@ -20,18 +20,22 @@ const SideDrawer = props => {
                 changeWallet={props.changeWallet}
                 changeNetwork={props.changeNetwork}/>
         }
-        if (name === 'send-drawer' && props.show){
-            return <SendDrawer />
+        if (name === 'send-coins' && props.show){
+            return <SendDrawer 
+                click={props.menuBack}/>
         }
         if (name === 'receive-coins' && props.show){
-            return <ReceiveDrawer />
+            return <ReceiveDrawer 
+                click={props.menuBack}/>
         }
         if (name === 'change-wallet' && props.show){
             return <WalletDrawer 
-                wallets={props.wallets}/>
+                wallets={props.wallets}
+                click={props.menuBack}/>
         }
         if (name === 'change-network' && props.show){
-            return <NetworkDrawer />
+            return <NetworkDrawer 
+                click={props.menuBack}/>
         }
     }
     

@@ -1,9 +1,9 @@
-.toggle-btn {
+.dots-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 24px;
-    width: 30px;
+    width: 0.35em;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -11,12 +11,13 @@
     box-sizing: border-box;
 }
 
-.toggle-btn-line {
-    width: 2em;
-    height: 0.15em;
+.dots-menu-dot {
+    width: 0.35em;
+    height: 0.35em;
     background: white;
+    border-radius: 50%;
 }
 
-.toggle-btn:focus {
+.dots-menu:focus {
     outline: none;
 }

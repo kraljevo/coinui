@@ -7,10 +7,12 @@ import bitcoin from './components/images/bitcoin.png';
 import litecoin from './components/images/litecoin.png';
 import ethereum from './components/images/ethereum.png';
 import './App.css'
+import DropMenu from './components/SideDrawer/DropMenu/DropMenu';
 
 export default class App extends Component {
   state = {
     sideDrawerOpen: false,
+    showDropMenu: false,
     drawerType: '',
     coin: [{
       id: 1,
@@ -46,6 +48,7 @@ export default class App extends Component {
   changeWallet = () => {this.setState({drawerType: 'change-wallet'})}
   changeNetwork = () => {this.setState({drawerType: 'change-network'})}
 
+  //Open and close drawer
   openDrawer = () => {
     this.setState(() => {
       return {
@@ -55,31 +58,81 @@ export default class App extends Component {
   }
 
   closeDrawer = () => {
+    this.setState(() => {
+      return {
+        sideDrawerOpen: false,
+        showDropMenu: false,
+        drawerType: ''
+    }})
+  }
+
+  //Open and close drop menu
+  toggleDropMenu = () => {
+    this.setState((prevState) => {
+      return {
+        showDropMenu: !prevState.showDropMenu
+      }})
+  }
+
+  //Back Button for menus
+  menuBackButton = () => {
     this.setState({
-      sideDrawerOpen: false,
-      drawerType: ''
+      drawerType: 'main-drawer'
     })
+  }
+
+  //Add or remove wallets
+  addWallet = (walletName) => {
+    this.setState({wallet: this.state.wallet.push({walletName}).sort()
+    })
+  }
+
+  deleteWallet = (walletName) => {
+    var index = this.state.wallet.indexOf(walletName)
+    if(index > -1) {
+      this.setState({wallet: this.state.wallet.splice(index, 1)})
+    }
   }
   
   render() {
+    //Component Props Passed Down
     let backdrop;
+    
+    let sideDrawer = <SideDrawer 
+      show={this.state.sideDrawerOpen}
+      drawerType={this.state.drawerType}
+      menuBack={this.menuBackButton}
+      sendCoins={this.sendCoins}
+      receiveCoins={this.receiveCoins}
+      changeWallet={this.changeWallet}
+      changeNetwork={this.changeNetwork}
+      wallets={this.state.wallet}/>
 
-    if(this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.closeDrawer}/>
+    let dropMenu = <DropMenu 
+      show={this.state.showDropMenu}/>
+
+    let coinData = <DataDivs 
+      coins={this.state.coin}/>
+
+    let toolBar = <Toolbar 
+      openDrawer={this.openDrawer}
+      toggleDropMenu={this.toggleDropMenu}
+      addWallet={this.addWallet}
+      removeWallet={this.removeWallet}/>
+
+    if(this.state.sideDrawerOpen || this.state.showDropMenu) {
+      backdrop = <Backdrop
+        click={this.closeDrawer}/>
     }
     
+    //App Rendering
     return (
       <div className="App">
         <div style={{height: '100%'}}>
-          <Toolbar openDrawer={this.openDrawer}/>
-          <SideDrawer
-            show={this.state.sideDrawerOpen}
-            drawerType={this.state.drawerType}
-            sendCoins={this.sendCoins}
-            receiveCoins={this.receiveCoins}
-            changeWallet={this.changeWallet}
-            changeNetwork={this.changeNetwork}
-            wallets={this.state.wallets}/>
+          {toolBar}
+          {sideDrawer}
+          {dropMenu}
+          {dropMenu}
           {backdrop}
         </div>
         <div className="App-content">
@@ -87,8 +140,7 @@ export default class App extends Component {
             <h4>Total USD Balance</h4>
             <h2>$20,000.00</h2>
           </div>
-          <DataDivs 
-            coins={this.state.coin}/>
+          {coinData}
         </div>
       </div>
     );

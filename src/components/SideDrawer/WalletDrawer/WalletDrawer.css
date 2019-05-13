@@ -1,0 +1,33 @@
+.wallet-drawer {
+    background-color: white;
+    margin-left: 2em;
+}
+
+.wallet-drawer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back-button {
+    background:none!important;
+    color:#5f1bff;
+    font-size: 1.25em;
+    border:none; 
+    padding:0!important;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 1em;
+}
+
+.wallet-drawer button {
+    background:none!important;
+    color:#5f1bff;
+    font-size: 1.25em;
+    border:none; 
+    padding:0!important;
+    cursor: pointer;
+    margin-bottom: 0.75em;
+}

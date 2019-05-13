@@ -2,18 +2,21 @@ import React from 'react';
 import './NetworkDrawer.css';
 
  const NetworkDrawer = props => {
+    let backBtn = '< Back';
+
     return (
-        <nav className={props.drawerClasses}>
-        <div className="company-name">
-            KralCo
+        <div>
+            <button className="back-button" onClick={props.click}>
+                {backBtn}
+            </button>
+            <nav className="network-drawer">
+                <ul>
+                    <li><button>{props.wallets[0].name}</button></li>
+                    <li><button>{props.wallets[1].name}</button></li>
+                    <li><button>{props.wallets[2].name}</button></li>
+                </ul>
+            </nav>
         </div>
-        <ul>
-            <li><button onClick={props.sendCoins}>Send Coins</button></li>
-            <li><button onClick={props.receiveCoins}>Receive Coins</button></li>
-            <li><button onClick={props.changeWallet}>Change Wallet</button></li>
-            <li><button onClick={props.changeNetwork}>Change Network</button></li>
-        </ul>
-    </nav>
     )
 }
 

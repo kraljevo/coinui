@@ -2,9 +2,14 @@ import React from 'react';
 import './ReceiveDrawer.css';
 
 const ReceiveDrawer = props => {
+    let backBtn = '< Back';
+
     return (
-        <div className="receive-drawer">
-            <form>
+        <div >
+            <button className="back-button" onClick={props.click}>
+                {backBtn}
+            </button>
+            <form className="receive-drawer">
                 <div>
                     <div className="form-item">Coin Type:</div>
                     <select name="send-name">
