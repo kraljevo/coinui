@@ -12,7 +12,6 @@
     margin-left: 2rem;
     font-size: 1.75em;
     color: white;
-    text-decoration: none;
 }
 
 .toolbar-navigation {
@@ -24,20 +23,4 @@
 
 .spacer {
     flex: 1;
-}
-
-@media (max-width: 768px) {
-    .toolbar-navigation-items {
-        display: none;
-    }
-}
-
-@media (min-width: 769px) {
-    .toolbar-toggle-btn {
-        display: none;
-    }
-
-    .toolbar-logo {
-        margin-left: 0;
-    }
 }
