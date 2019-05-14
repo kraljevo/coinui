@@ -13,7 +13,7 @@ const SendDrawer = props => {
                 <div>
                     <div className="send-item">Coin Type:</div>
                     <select className="send-select" name="send-name">
-                        <option selected>Select Coin Type</option>
+                        <option defaultValue>Select Coin Type</option>
                         <option value="bitcoin">Bitcoin</option>
                         <option value="litecoin">Litecoin</option>
                         <option value="ethereum">Ethereum</option>

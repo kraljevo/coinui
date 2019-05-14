@@ -3,13 +3,9 @@ import './DataDivs.css';
 
 const DataDivs = props => {
   let rows = props.coins.map(item => {
-    return <CoinRow key = {
-      item.id
-    }
-    coin = {
-      item
-    }
-    />
+    return <CoinRow 
+      key = {item.id}
+      coin = {item} />
   })
 
   return (
@@ -30,7 +26,7 @@ const CoinRow = (props) => {
   return (
       <div className="table-row">
           <div className="row-name">
-              {props.coin.icon}{props.coin.name}
+          {props.coin.icon}{props.coin.name}
           </div>
           <div className="row-amount">
               {props.coin.amount}

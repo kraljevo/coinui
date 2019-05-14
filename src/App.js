@@ -34,10 +34,13 @@ export default class App extends Component {
       value: 100 //value for one coin
     }],
     wallet: [{
+      id: 1,
       name: 'Wallet 1'
     }, {
+      id: 2,
       name: 'Wallet 2'
     }, {
+      id: 3,
       name: 'Wallet 3'
     }]
   }
@@ -131,7 +134,6 @@ export default class App extends Component {
         <div style={{height: '100%'}}>
           {toolBar}
           {sideDrawer}
-          {dropMenu}
           {dropMenu}
           {backdrop}
         </div>

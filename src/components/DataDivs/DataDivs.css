@@ -10,6 +10,7 @@
 
 .list-header {
     display: table-header-group;
+    background-color: #c46bff;
     background-image: linear-gradient(to bottom right, #b547ff, #5f1bff);
     color: white;
     font-size: 1.2em;
@@ -51,16 +52,19 @@
 
 .row-name {
     display: table-cell;
+    vertical-align: center;
 }
 
 .row-name img {
     float: left;
     height: 2em;
     width: 2em;
+    margin-right: 10px;
 }
 
 .row-amount,
 .row-value {
     display: table-cell;
     text-align: right;
+    vertical-align: center;
 }

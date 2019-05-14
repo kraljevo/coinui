@@ -3,11 +3,13 @@ import './DotsToggle.css';
 
 const DotsToggle = props => {
     return (
-        <button className="dots-menu" onClick={props.click}>
-            <div className="dots-menu-dot" />
-            <div className="dots-menu-dot" />
-            <div className="dots-menu-dot" />
-        </button>
+        <div className="drop-container" onClick={props.click}>
+            <button className="dots-menu">
+                <div className="dots-menu-dot" />
+                <div className="dots-menu-dot" />
+                <div className="dots-menu-dot" />
+            </button>
+        </div>
     )
 }
 

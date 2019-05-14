@@ -12,8 +12,7 @@ import './NetworkDrawer.css';
             <nav className="network-drawer">
                 <select className="net-select">
                     <option selected>Select a Network</option>
-                    <option></option>
-                    <option></option>
+                    
                 </select>
             </nav>
         </div>
