@@ -4,7 +4,7 @@ import './WalletDrawer.css';
 
 const WalletDrawer = props => {
     let backBtn = 'Back';
-    let walletNames = props.wallets.map(item => {
+    let names = props.wallets.map(item => {
       return <WalletName 
         key = {item.id}
         wallet = {item} />
@@ -17,7 +17,7 @@ const WalletDrawer = props => {
             </button>
             <nav className="wallet-drawer">
                 <ul>
-                    {walletNames}
+                    {names}
                 </ul>
             </nav>
         </div>
@@ -26,7 +26,7 @@ const WalletDrawer = props => {
 
 const WalletName = (props) => {
     return (
-        <li><button>{props.wallets.name}</button></li>
+        <li><button>{props.wallet.name}</button></li>
     );
   }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './NetworkDrawer.css';
 
- const NetworkDrawer = props => {
+const NetworkDrawer = props => {
     let backBtn = 'Back';
 
     return (
@@ -11,7 +11,7 @@ import './NetworkDrawer.css';
             </button>
             <nav className="network-drawer">
                 <select className="net-select">
-                    <option selected>Select a Network</option>
+                    <option defaultValue>Select a Network</option>
                     
                 </select>
             </nav>

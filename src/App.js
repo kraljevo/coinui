@@ -35,13 +35,13 @@ export default class App extends Component {
     }],
     wallet: [{
       id: 1,
-      name: 'Wallet 1'
+      name: "Kral's Wallet"
     }, {
       id: 2,
-      name: 'Wallet 2'
+      name: "Santa's Wallet"
     }, {
       id: 3,
-      name: 'Wallet 3'
+      name: "I'm out of names :|"
     }]
   }
 
@@ -104,12 +104,12 @@ export default class App extends Component {
     let sideDrawer = <SideDrawer 
       show={this.state.sideDrawerOpen}
       drawerType={this.state.drawerType}
+      wallets={this.state.wallet}
       menuBack={this.menuBackButton}
       sendCoins={this.sendCoins}
       receiveCoins={this.receiveCoins}
       changeWallet={this.changeWallet}
-      changeNetwork={this.changeNetwork}
-      wallets={this.state.wallet}/>
+      changeNetwork={this.changeNetwork}/>
 
     let dropMenu = <DropMenu 
       show={this.state.showDropMenu}/>

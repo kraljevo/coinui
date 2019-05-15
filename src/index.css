@@ -3,7 +3,10 @@ html {
   background-image: linear-gradient(to bottom right, #ffffff, #d4d4d4);
 }
 
-button:focus {outline:0;}
+button:focus,
+select:focus {
+  outline:0;
+}
 
 body {
   margin: 0;
