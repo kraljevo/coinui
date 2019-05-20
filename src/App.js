@@ -6,8 +6,8 @@ import DataDivs from './components/DataDivs/DataDivs';
 import bitcoin from './components/images/bitcoin.png';
 import litecoin from './components/images/litecoin.png';
 import ethereum from './components/images/ethereum.png';
-import './App.css'
 import DropMenu from './components/SideDrawer/DropMenu/DropMenu';
+import './App.css'
 
 export default class App extends Component {
   state = {
