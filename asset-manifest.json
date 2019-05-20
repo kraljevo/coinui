@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/coinui/static/css/main.2653638c.chunk.css",
-    "main.js": "/coinui/static/js/main.5be27477.chunk.js",
-    "main.js.map": "/coinui/static/js/main.5be27477.chunk.js.map",
+    "main.css": "/coinui/static/css/main.97227184.chunk.css",
+    "main.js": "/coinui/static/js/main.6092fdf3.chunk.js",
+    "main.js.map": "/coinui/static/js/main.6092fdf3.chunk.js.map",
     "runtime~main.js": "/coinui/static/js/runtime~main.1ab53f73.js",
     "runtime~main.js.map": "/coinui/static/js/runtime~main.1ab53f73.js.map",
     "static/js/2.a68ccf2f.chunk.js": "/coinui/static/js/2.a68ccf2f.chunk.js",
     "static/js/2.a68ccf2f.chunk.js.map": "/coinui/static/js/2.a68ccf2f.chunk.js.map",
     "index.html": "/coinui/index.html",
-    "precache-manifest.731d401eb73bce68fdde9df6687fffa8.js": "/coinui/precache-manifest.731d401eb73bce68fdde9df6687fffa8.js",
+    "precache-manifest.2fa386ede98206b9088987dca5d9ab86.js": "/coinui/precache-manifest.2fa386ede98206b9088987dca5d9ab86.js",
     "service-worker.js": "/coinui/service-worker.js",
-    "static/css/main.2653638c.chunk.css.map": "/coinui/static/css/main.2653638c.chunk.css.map",
+    "static/css/main.97227184.chunk.css.map": "/coinui/static/css/main.97227184.chunk.css.map",
     "static/media/bitcoin.png": "/coinui/static/media/bitcoin.3e0d2b9a.png",
     "static/media/ethereum.png": "/coinui/static/media/ethereum.64b91155.png"
   }
