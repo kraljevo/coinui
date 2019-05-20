@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  background-image: linear-gradient(to bottom right, #ffffff, #d4d4d4);
+  background: #ffffff;
 }
 
 button:focus,
@@ -14,6 +14,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  background-image: linear-gradient(to bottom right, #ffffff, #d4d4d4);
+  background: #ffffff;
   height: calc(100% - 80px);
 }

@@ -7,8 +7,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    padding: 20px;
-    width: 60px;
+    width: 0px;
 }
 
 .dots-menu {
@@ -19,7 +18,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    padding: 20px;
+    padding: 17px 20px;
     width: 60;
     flex-direction: column;
     justify-content: space-around;
@@ -28,8 +27,8 @@
 }
 
 .dots-menu-dot {
-    width: 0.35em;
-    height: 0.35em;
+    width: 4px;
+    height: 4px;
     background: white;
     border-radius: 50%;
 }

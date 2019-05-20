@@ -7,7 +7,7 @@
 
 .drop-menu.open {
     transform: translateY(0);
-    background-color: #00a9c7;
+    background-color: #0089a1;
     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
