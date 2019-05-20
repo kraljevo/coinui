@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: none;
 }
 
 .main-drawer li {
@@ -10,10 +11,9 @@
 }
 
 .main-drawer button {
-    width: 70%;
     font-size: 1.25em;
     color: white;
-    background: #5f1bff;
+    background: none;
     border: none;
     border-radius: 10px;
     margin: 5px 0px;
@@ -23,5 +23,5 @@
 }
 
 .main-drawer button:hover {
-    background: #5f1bff8f
+    background: #6cb9c7;
 }

@@ -10,8 +10,7 @@
 
 .list-header {
     display: table-header-group;
-    background-color: #c46bff;
-    background-image: linear-gradient(to bottom right, #b547ff, #5f1bff);
+    background-image: linear-gradient(to bottom, #00a9c7, #0089a1);
     color: white;
     font-size: 1.2em;
     height: 2em;

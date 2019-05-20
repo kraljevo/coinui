@@ -8,11 +8,10 @@ const Toolbar = props => {
         <header className="toolbar">
             <nav className="toolbar-navigation">
                 <div className="toolbar-toggle-btn">
-                    <DrawerToggle click={props.openDrawer} />
+                    <DrawerToggle click={props.toggleDrawer} />
                 </div>
-                <div className="toolbar-logo">WALLET</div>
-                <div className="spacer"></div>
-                    <DotsToggle click={props.toggleDropMenu} />
+                <div className="toolbar-logo">kralco</div>
+                <DotsToggle click={props.toggleDropMenu} />
             </nav>
         </header>
     )

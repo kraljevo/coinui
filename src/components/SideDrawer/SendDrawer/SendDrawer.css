@@ -8,16 +8,16 @@
 }
 
 .send-item {
-    color:#5f1bff;
+    color:#ffffff;
     font-size: 1.5em;
 }
 
 .back-button {
     margin: 10px auto;
-    min-width: 25%;
+    width: 75px;
     height: 25px;
-    color: white;
-    background-color: #5f1bff;
+    color: #00a9c7;
+    background-color: #ffffff;
     border: none;
     border-radius: 7px;
     padding: 0px 5px;
@@ -27,12 +27,10 @@
 .send-select {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 100%;
+    width: 50%;
     height: 40px;
-    border: 1px solid #5f1bff;;
-    border-bottom: 2px solid #5f1bff;
-    border-left: 2px solid #5f1bff;
-    color: #5f1bff;
+    border: none;
+    color: #00a9c7;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -42,22 +40,20 @@
 .send-address {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 96%;
+    width: 50%;
     height: 35px;
-    border: 1px solid #5f1bff;;
-    border-bottom: 2px solid #5f1bff;
-    border-left: 2px solid #5f1bff;
-    color: #5f1bff;
+    border: none;
+    color: #00a9c7;
     border-radius: 5px;
     padding-left: 5px;
 }
 
 .send-btn {
     margin: 10px auto;
-    width: 100%;
+    width: 50%;
     height: 35px;
-    color: white;
-    background-color: #5f1bff;
+    color: #00a9c7;
+    background-color: #ffffff;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -65,5 +61,6 @@
 
 .back-button:hover,
 .send-btn:hover {
-    background: #5f1bff8f
+    color: #ffffff;
+    background: #6cb9c7;
 }

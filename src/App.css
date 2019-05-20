@@ -3,6 +3,12 @@
     min-width: 420px;
 }
 
+input, select {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .App-content {
     margin-top: 80px;
 }

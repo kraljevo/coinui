@@ -52,10 +52,11 @@ export default class App extends Component {
   changeNetwork = () => {this.setState({drawerType: 'change-network'})}
 
   //Open and close drawer
-  openDrawer = () => {
-    this.setState(() => {
+  toggleDrawer = () => {
+    this.setState((prevState) => {
       return {
-        sideDrawerOpen: true,
+        sideDrawerOpen: !prevState.sideDrawerOpen,
+        showDropMenu: false,
         drawerType: 'main-drawer'
       }})
   }
@@ -73,7 +74,8 @@ export default class App extends Component {
   toggleDropMenu = () => {
     this.setState((prevState) => {
       return {
-        showDropMenu: !prevState.showDropMenu
+        showDropMenu: !prevState.showDropMenu,
+        sideDrawerOpen: false
       }})
   }
 
@@ -118,7 +120,7 @@ export default class App extends Component {
       coins={this.state.coin}/>
 
     let toolBar = <Toolbar 
-      openDrawer={this.openDrawer}
+      toggleDrawer={this.toggleDrawer}
       toggleDropMenu={this.toggleDropMenu}
       addWallet={this.addWallet}
       removeWallet={this.removeWallet}/>
@@ -139,8 +141,7 @@ export default class App extends Component {
         </div>
         <div className="App-content">
           <div className="dollar-value">
-            <h4>Total USD Balance</h4>
-            <h2>$20,000.00</h2>
+            <h4>Current Trends</h4>
           </div>
           {coinData}
         </div>

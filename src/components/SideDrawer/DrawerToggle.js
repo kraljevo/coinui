@@ -3,13 +3,11 @@ import './DrawerToggle.css';
 
 const DrawerToggle = props => {
     return (
-        <div className="menu-container" onClick={props.click}>
-            <button className="toggle-btn">
-                <div className="toggle-btn-line" />
-                <div className="toggle-btn-line" />
-                <div className="toggle-btn-line" />
-            </button>
-        </div>
+        <button className="toggle-btn" onClick={props.click}>
+            <div className="toggle-btn-line" />
+            <div className="toggle-btn-line" />
+            <div className="toggle-btn-line" />
+        </button>
     )
 }
 

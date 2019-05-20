@@ -1,9 +1,13 @@
 .drop-menu {
-    display: none;
+    position: absolute;
+    top: 0px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
 }
 
 .drop-menu.open {
-    background-color: white;
+    transform: translateY(0);
+    background-color: #00a9c7;
     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
@@ -13,14 +17,14 @@
     right: 20px;
     padding: 5px 5px;
     min-height: auto;
-    z-index: 200;
+    z-index: 125;
 }
 
 .drop-menu button {
     display: list-item;
     font-weight: bold;
     background:none!important;
-    color:#5f1bff;
+    color: #ffffff;
     font-size: 1.25em;
     border:none; 
     padding:0!important;

@@ -10,14 +10,9 @@ const DataDivs = props => {
 
   return (
     <div className="coin-list">
-        <div className="list-header">
-            <div className="header-name">Name</div>
-            <div className="header-amount">Amount</div>
-            <div className="header-value">Value</div>
-        </div>
-        <div className="list-body">
-            {rows}
-        </div>
+      <div className="list-body">
+          {rows}
+      </div>
     </div>
   )
 }

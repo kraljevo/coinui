@@ -41,9 +41,6 @@ const SideDrawer = props => {
     
     return (
         <div className={drawerClasses}>
-            <div className="company-name">
-                KralCo
-            </div>
             {DrawerChoice(props.drawerType)}
         </div>
     )

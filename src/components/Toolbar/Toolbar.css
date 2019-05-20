@@ -1,25 +1,46 @@
 .toolbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-image: linear-gradient(to bottom right, #b547ff, #5f1bff);
+    position:fixed;
+    display: flex;
+    z-index: 200;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    color: #ffffff;
+    background: #00a9c7;
     height: 60px;
+    width: 100%;
+    top: 0;
     font-family: Palatino, sans-serif;
-}
-
-.toolbar-logo {
-    margin-left: 2rem;
-    font-size: 1.75em;
-    color: white;
 }
 
 .toolbar-navigation {
     display: flex;
-    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+    flex: 1 1 auto;
 }
 
-.spacer {
-    flex: 1;
+.toolbar-logo {
+    font-size: 2em;
+    color: white;
+}
+
+.toolbar-toggle-btn {
+    display: flex;
+    cursor: pointer;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
 }
