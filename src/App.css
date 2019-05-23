@@ -1,12 +1,12 @@
 .App {
     font-family: Palatino, sans-serif;
-    min-width: 420px;
+    min-width: 360px;
 }
 
 input, select {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .App-content {
@@ -14,5 +14,5 @@ input, select {
 }
 
 .dollar-value {
-    margin: 1rem 2rem;
+    margin-left: 2rem;
 }

@@ -1,69 +1,32 @@
 .coin-list {
-    display: table-caption;
-    width: 90%;
-    display: table;
-    margin: 0 auto;
-    font-family: Palatino, sans-serif;
-    letter-spacing: 2px;
+    width: 100%;
+    margin: none;
     border: none;
 }
 
-.list-header {
-    display: table-header-group;
-    background-image: linear-gradient(to bottom, #00a9c7, #0089a1);
-    color: white;
-    font-size: 1.2em;
-    height: 2em;
+div#crypto-container {
+    border-top: 1px solid #00a9c79d;
+    height: 60px;
+    padding-top: 30px;
 }
 
-.header-icon {
-    display: table-cell;
-    text-align: left;
-    width: 5%;
-    padding: 5px;
+.favorites-sym img {
+    max-height: 30px;
+    max-width: 30px;
+    margin-right: 1em;
+    border-radius: 50%;
+    vertical-align: middle;
 }
-
-.header-name {
-    display: table-cell;
-    text-align: left;
-    width: 30%;
-    padding: 5px;
-}
-
-.header-amount,
-.header-value {
-    display: table-cell;
-    text-align: right;
-    width: 25%;
-    padding: 5px;
-}
-
-.list-body {
-    display: table-row-group;
-}
-
-.table-row {
-    display: table-row;
-    width: 100%;
-    height: 100%;
-    line-height: 2em;
-}
-
-.row-name {
-    display: table-cell;
-    vertical-align: center;
-}
-
-.row-name img {
+  
+.favorites-sym {
+    margin-left: 2em;
+    width: 200px;
     float: left;
-    height: 2em;
-    width: 2em;
-    margin-right: 10px;
 }
-
-.row-amount,
-.row-value {
-    display: table-cell;
+  
+.favorites-price {
+    margin-right: 2em;
+    width: 100px;
+    float: right;
     text-align: right;
-    vertical-align: center;
 }

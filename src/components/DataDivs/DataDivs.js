@@ -1,37 +1,18 @@
 import React from 'react';
 import './DataDivs.css';
+var NumberFormat = require('react-number-format');
 
 const DataDivs = props => {
-  let rows = props.coins.map(item => {
-    return <CoinRow 
-      key = {item.id}
-      coin = {item} />
-  })
-
   return (
     <div className="coin-list">
-      <div className="list-body">
-          {rows}
-      </div>
+      {Object.keys(props.coins).map((key) => (
+        <div id="crypto-container">
+          <div className="favorites-sym"><img src={'https://www.cryptocompare.com' + props.coins[key].USD.IMAGEURL} alt={`${key} icon`} />{key}</div>
+          <div className="favorites-price"><NumberFormat value={props.coins[key].USD.PRICE} displayType={'text'} decimalprecision={2} thousandSeparator={true} prefix={'$'} /></div>
+        </div>
+      ))}
     </div>
   )
 }
-  
-const CoinRow = (props) => {
-  return (
-      <div className="table-row">
-          <div className="row-name">
-          {props.coin.icon}{props.coin.name}
-          </div>
-          <div className="row-amount">
-              {props.coin.amount}
-          </div>
-          <div className="row-value">
-              ${props.coin.amount * props.coin.value}
-          </div>
-      </div>
-  );
-}
-
 
 export default DataDivs;

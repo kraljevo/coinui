@@ -3,10 +3,8 @@ import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import DataDivs from './components/DataDivs/DataDivs';
-import bitcoin from './components/images/bitcoin.png';
-import litecoin from './components/images/litecoin.png';
-import ethereum from './components/images/ethereum.png';
 import DropMenu from './components/SideDrawer/DropMenu/DropMenu';
+import axios from 'axios';
 import './App.css'
 
 export default class App extends Component {
@@ -14,25 +12,7 @@ export default class App extends Component {
     sideDrawerOpen: false,
     showDropMenu: false,
     drawerType: '',
-    coin: [{
-      id: 1,
-      name: "Bitcoin",
-      icon: <img src={bitcoin} alt="" />,
-      amount: 2,
-      value: 6000 //value for one coin
-    }, {
-      id: 2,
-      name: "Litecoin",
-      icon: <img src={litecoin} alt="" />,
-      amount: 10,
-      value: 500 //value for one coin
-    }, {
-      id: 3,
-      name: "Ethereum",
-      icon: <img src={ethereum} alt="" />,
-      amount: 30,
-      value: 100 //value for one coin
-    }],
+    coin: [],
     wallet: [{
       id: 1,
       name: "Kral's Wallet"
@@ -43,6 +23,14 @@ export default class App extends Component {
       id: 3,
       name: "I'm out of names :|"
     }]
+  }
+
+  componentDidMount() {
+    axios.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,BCH,ETH,ETC,LTC&tsyms=USD&api_key={6457c88d1d2832d50f5a9fa2439b97fe72fe413f57b66e932fe4645c1bcffe7b}').then(res => {
+      const coin = res.data.DISPLAY;
+      console.log(coin);
+      this.setState({coin: coin});
+    })
   }
 
   //Drawer Types
@@ -141,7 +129,7 @@ export default class App extends Component {
         </div>
         <div className="App-content">
           <div className="dollar-value">
-            <h4>Current Trends</h4>
+            <h4>Favorites</h4>
           </div>
           {coinData}
         </div>
