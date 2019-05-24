@@ -1,32 +1,44 @@
 .coin-list {
     width: 100%;
-    margin: none;
-    border: none;
+    border-collapse: separate;
+    caption-side: top;
+    padding: 0px;
+    background: rgb(255, 255, 255);
+    border-spacing: 0px;
 }
 
-div#crypto-container {
+.list-body {
+    padding: 0px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.crypto-container {
     border-top: 1px solid #00a9c79d;
-    height: 60px;
-    padding-top: 30px;
+    font-size: 18px;
+    user-select: none;
+    padding: 28px 36px;
 }
 
-.favorites-sym img {
-    max-height: 30px;
-    max-width: 30px;
-    margin-right: 1em;
+.favorites-img {
+    cursor: pointer;
+    padding: 20px 20px 20px 0px;
+}
+
+.favorites-img img {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    vertical-align: middle;
 }
   
 .favorites-sym {
-    margin-left: 2em;
-    width: 200px;
     float: left;
 }
   
 .favorites-price {
-    margin-right: 2em;
-    width: 100px;
     float: right;
     text-align: right;
+    margin-right: 2em;
 }
