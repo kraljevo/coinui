@@ -24,6 +24,7 @@ export default class App extends Component {
       name: "I'm out of names :|"
     }]
   }
+  //test commit
 
   componentDidMount() {
     axios.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,BCH,ETH,ETC,LTC&tsyms=USD&api_key={6457c88d1d2832d50f5a9fa2439b97fe72fe413f57b66e932fe4645c1bcffe7b}').then(res => {
