@@ -40,3 +40,9 @@
 .dots-menu:hover{
     background: #6cb9c7;
 }
+
+@media screen and (min-width: 769px) {
+    .dots-menu {
+        display: none;
+    }
+}

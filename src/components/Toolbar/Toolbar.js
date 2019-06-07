@@ -11,6 +11,10 @@ const Toolbar = props => {
                     <DrawerToggle click={props.toggleDrawer} />
                 </div>
                 <div className="toolbar-logo">kralco</div>
+                <div className="nav-item">Send Coins</div>
+                <div className="nav-item">Buy Coins</div>
+                <div className="nav-item">Wallets</div>
+                <div className="nav-item">Networks</div>
                 <DotsToggle click={props.toggleDropMenu} />
             </nav>
         </header>

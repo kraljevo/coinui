@@ -28,6 +28,11 @@
     flex: 1 1 auto;
 }
 
+.nav-item {
+    margin: 5px 1em 0 2em;
+    align-items: center;
+}
+
 .toolbar-logo {
     font-size: 2em;
     color: white;
@@ -43,4 +48,40 @@
     top: 0px;
     bottom: 0px;
     left: 0px;
+}
+
+@media screen and (min-width: 769px) {
+    .toolbar-toggle-btn {
+        display: none;
+    }
+
+    .toolbar-logo {
+        font-size: 2.5em;
+        text-align: left;
+        padding-right: 1em;
+        border-right: 2px solid #ffffff;
+    }
+
+    .toolbar {
+        -webkit-box-pack: left;
+        justify-content: left;
+        -webkit-box-align: left;
+        align-items: left;
+        left: 0;
+    }
+
+    .toolbar-navigation {
+        -webkit-box-pack: left;
+        justify-content: left;
+        -webkit-box-align: left;
+        align-items: left;
+        flex: none;
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-item {
+        display: none;
+    }
 }

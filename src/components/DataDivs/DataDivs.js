@@ -8,10 +8,8 @@ const DataDivs = props => {
       <div className="list-body">
         {Object.keys(props.coins).map((key) => (
           <div className="crypto-container">
-            <div className="favorites-img">
-              <img src={'https://www.cryptocompare.com' + props.coins[key].USD.IMAGEURL} alt={`${key} icon`} />
-            </div>
-            <div className="favorites-sym">
+            <img className="favorites-img" src={'https://www.cryptocompare.com' + props.coins[key].USD.IMAGEURL} alt={`${key} icon`} />
+            <div className="favorites-name">
               {key}
             </div>
             <div className="favorites-price">
