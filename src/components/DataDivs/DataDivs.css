@@ -1,3 +1,7 @@
+.dollar-value {
+    margin-left: 2rem;
+}
+
 .coin-list {
     width: 100%;
     padding: 0px;
@@ -9,7 +13,7 @@
 }
 
 .crypto-container {
-    border-top: 1px solid #00a9c79d;
+    border-top: 1px solid #00a9c770;
     font-size: 18px;
     padding: 10px 2em;
     vertical-align: middle;

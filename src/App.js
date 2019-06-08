@@ -128,9 +128,6 @@ export default class App extends Component {
           {backdrop}
         </div>
         <div className="App-content">
-          <div className="dollar-value">
-            <h4>Favorites</h4>
-          </div>
           {coinData}
         </div>
       </div>

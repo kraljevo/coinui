@@ -5,9 +5,9 @@ const MainDrawer = props => {
     return (
         <ul className='main-drawer'>
             <li><button onClick={props.sendCoins}>Send Coins</button></li>
-            <li><button onClick={props.receiveCoins}>Receive Coins</button></li>
-            <li><button onClick={props.changeWallet}>Change Wallet</button></li>
-            <li><button onClick={props.changeNetwork}>Change Network</button></li>
+            <li><button onClick={props.receiveCoins}>Buy Coins</button></li>
+            <li><button onClick={props.changeWallet}>Wallets</button></li>
+            <li><button onClick={props.changeNetwork}>Networks</button></li>
         </ul>
     )
 }
