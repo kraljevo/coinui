@@ -67,8 +67,9 @@
 
     .toolbar-logo {
         padding: 0 0.5em;
-        border: 2px solid #ffffff;
+        border: 3px solid #ffffff;
         text-align: center;
+        margin-right: 15px;
     }
 
     .toolbar {
@@ -87,6 +88,7 @@
 
     .nav-item {
         text-align: left;
+        margin: 0 3px;
     }
 
     #networks {
