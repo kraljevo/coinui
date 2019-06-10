@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/coinui/static/css/main.e094e0b1.chunk.css",
-    "main.js": "/coinui/static/js/main.2c29dadc.chunk.js",
-    "main.js.map": "/coinui/static/js/main.2c29dadc.chunk.js.map",
+    "main.css": "/coinui/static/css/main.34d9ab2b.chunk.css",
+    "main.js": "/coinui/static/js/main.6546eaad.chunk.js",
+    "main.js.map": "/coinui/static/js/main.6546eaad.chunk.js.map",
     "runtime~main.js": "/coinui/static/js/runtime~main.1ab53f73.js",
     "runtime~main.js.map": "/coinui/static/js/runtime~main.1ab53f73.js.map",
-    "static/js/2.56aeb664.chunk.js": "/coinui/static/js/2.56aeb664.chunk.js",
-    "static/js/2.56aeb664.chunk.js.map": "/coinui/static/js/2.56aeb664.chunk.js.map",
+    "static/js/2.e5f5eafb.chunk.js": "/coinui/static/js/2.e5f5eafb.chunk.js",
+    "static/js/2.e5f5eafb.chunk.js.map": "/coinui/static/js/2.e5f5eafb.chunk.js.map",
     "index.html": "/coinui/index.html",
-    "precache-manifest.251b7ee5d3102d1caf99711e0c3d9281.js": "/coinui/precache-manifest.251b7ee5d3102d1caf99711e0c3d9281.js",
+    "precache-manifest.89a44ac386341dd244f6d97b939fb670.js": "/coinui/precache-manifest.89a44ac386341dd244f6d97b939fb670.js",
     "service-worker.js": "/coinui/service-worker.js",
-    "static/css/main.e094e0b1.chunk.css.map": "/coinui/static/css/main.e094e0b1.chunk.css.map"
+    "static/css/main.34d9ab2b.chunk.css.map": "/coinui/static/css/main.34d9ab2b.chunk.css.map"
   }
 }
