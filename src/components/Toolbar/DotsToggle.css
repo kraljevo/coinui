@@ -5,6 +5,7 @@
     width: 60px;
     height: 60px;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .drop-menu-btn {
