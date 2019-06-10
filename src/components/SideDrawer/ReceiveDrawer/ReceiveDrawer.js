@@ -2,12 +2,10 @@ import React from 'react';
 import './ReceiveDrawer.css';
 
 const ReceiveDrawer = props => {
-    let backBtn = 'Back';
-
     return (
         <div className="container">
-            <button className="back-button" onClick={props.click}>
-                {backBtn}
+            <button className="back-button" onClick={props.backbtn}>
+                Back
             </button>
             <form className="receive-drawer">
                 <div>

@@ -3,7 +3,6 @@ import React from 'react';
 import './WalletDrawer.css';
 
 const WalletDrawer = props => {
-    let backBtn = 'Back';
     let names = props.wallets.map(item => {
       return <WalletName 
         key = {item.id}
@@ -12,8 +11,8 @@ const WalletDrawer = props => {
 
     return (
         <div className="container">
-            <button className="back-button" onClick={props.click}>
-                {backBtn}
+            <button className="back-button" onClick={props.backbtn}>
+                Back
             </button>
             <nav className="wallet-drawer">
                 <ul>

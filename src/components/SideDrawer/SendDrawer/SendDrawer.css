@@ -1,65 +1,81 @@
 .send-drawer {
-    margin-left: 2em;
+    margin: 0 20px;
 }
 
-.container {
-    width: 65%;
-    margin-left: 2em;
+.send-container {
+    width: 100%;
 }
 
 .send-item {
-    color:#ffffff;
+    color:#000000;
     font-size: 1.5em;
+    letter-spacing: 1px;
 }
 
-.back-button {
-    margin: 10px auto;
-    width: 75px;
-    height: 25px;
-    color: #00a9c7;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 7px;
-    padding: 0px 5px;
-    cursor: pointer;
+.send-address {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #00a9c734;
+    color: #000000;
+    border-radius: 3px;
+    padding-left: 10px;
 }
 
 .send-select {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 50%;
-    height: 40px;
-    border: none;
-    color: #00a9c7;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #00a9c734;
+    color: #000000;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-.send-amount,
-.send-address {
-    margin: 0 auto;
+.send-amount {
     margin-bottom: 20px;
-    width: 50%;
+    width: 100%;
     height: 35px;
-    border: none;
-    color: #00a9c7;
-    border-radius: 5px;
-    padding-left: 5px;
+    border: 1px solid #00a9c734;
+    color: #000000;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.send-btn-container {
+    width: 100%;
+    text-align: center;
+}
+
+.type-amount-container {
+    display: flex;
+    width: auto;
+}
+
+.type-container {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.amount-container {
+    width: 50%;
 }
 
 .send-btn {
-    margin: 10px auto;
-    width: 50%;
-    height: 35px;
-    color: #00a9c7;
-    background-color: #ffffff;
+    margin: 10px 0;
+    width: 30%;
+    height: 50px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    background-color: #00a9c7;
     border: none;
-    border-radius: 7px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-.back-button:hover,
 .send-btn:hover {
     color: #ffffff;
     background: #6cb9c7;

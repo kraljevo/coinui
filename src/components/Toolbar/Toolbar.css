@@ -1,17 +1,16 @@
 .toolbar {
     position:fixed;
-    display: flex;
     z-index: 200;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    flex-direction: row;
     color: #ffffff;
     background: #00a9c7;
     height: 60px;
     width: 100%;
     top: 0;
+    margin: 0 auto;
     font-family: Palatino, sans-serif;
 }
 
@@ -23,19 +22,27 @@
     align-items: center;
     flex-direction: row;
     position: relative;
-    width: 100%;
-    min-height: 60px;
+    height: 60px;
     flex: 1 1 auto;
 }
 
 .nav-item {
-    margin: 5px 1em 0 2em;
-    align-items: center;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 11px 10px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #008ba3
 }
 
 .toolbar-logo {
     font-size: 2em;
-    color: white;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .toolbar-toggle-btn {
@@ -46,42 +53,53 @@
     flex-direction: row;
     position: absolute;
     top: 0px;
-    bottom: 0px;
     left: 0px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 876px) {
     .toolbar-toggle-btn {
         display: none;
     }
 
+    .side-drawer {
+        display: none;
+    }
+
     .toolbar-logo {
-        font-size: 2.5em;
-        text-align: left;
-        padding-right: 1em;
-        border-right: 2px solid #ffffff;
+        padding: 0 0.5em;
+        border: 2px solid #ffffff;
+        text-align: center;
     }
 
     .toolbar {
-        -webkit-box-pack: left;
-        justify-content: left;
-        -webkit-box-align: left;
-        align-items: left;
-        left: 0;
+        padding: 0 auto;
     }
 
     .toolbar-navigation {
-        -webkit-box-pack: left;
-        justify-content: left;
-        -webkit-box-align: left;
-        align-items: left;
-        flex: none;
-        margin-left: 2em;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    .nav-item {
+        text-align: left;
+    }
+
+    #networks {
+        margin-right: auto;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 875px){
     .nav-item {
         display: none;
+    }
+
+    .toolbar {
+        width: 100%;
     }
 }

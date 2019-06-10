@@ -7,14 +7,22 @@ const Toolbar = props => {
     return (
         <header className="toolbar">
             <nav className="toolbar-navigation">
-                <div className="toolbar-toggle-btn">
-                    <DrawerToggle click={props.toggleDrawer} />
+                <DrawerToggle click={props.toggleDrawer}/>
+                <div className="toolbar-logo" onClick={props.clickDash}>
+                    KRALCO
                 </div>
-                <div className="toolbar-logo">kralco</div>
-                <div className="nav-item">Send Coins</div>
-                <div className="nav-item">Buy Coins</div>
-                <div className="nav-item">Wallets</div>
-                <div className="nav-item">Networks</div>
+                <div className="nav-item" onClick={props.sendCoins}>
+                    Send
+                </div>
+                <div className="nav-item" onClick={props.receiveCoins}>
+                    Buy
+                </div>
+                <div className="nav-item" onClick={props.changeWallet}>
+                    Wallets
+                </div>
+                <div className="nav-item" id="networks" onClick={props.changeNetwork}>
+                    Networks
+                </div>
                 <DotsToggle click={props.toggleDropMenu} />
             </nav>
         </header>

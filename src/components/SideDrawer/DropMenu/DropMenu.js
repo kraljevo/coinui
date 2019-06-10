@@ -9,8 +9,16 @@ const DropMenu = props => {
 
     return (
         <div className={menuClasses}>
-            <button onClick={props.addWallet}>Add Wallet</button>
-            <button onClick={props.removeWallet}>Remove Wallet</button>
+            <div className="drop-item">
+                {props.username}
+            </div>
+            <div className="drop-item" id="email">
+                {props.useremail}
+            </div>
+            <div className="drop-item" onClick={props.settings}>Settings</div>
+            <div className="drop-item" onClick={props.tools}>Tools</div>
+            <div className="drop-item" onClick={props.tools}>Help</div>
+            <div className="drop-item" onClick={props.tools}>Sign Out</div>
         </div>
     )
 }
