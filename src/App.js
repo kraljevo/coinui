@@ -28,7 +28,7 @@ export default class App extends Component {
       name: "I'm out of names :|"
     }],
     username: 'John Doe',
-    email: 'J.Doe@gmail.com'
+    email: 'j.doe@gmail.com'
   }
 
   componentDidMount() {
@@ -113,9 +113,10 @@ export default class App extends Component {
       coins={this.state.coin}/>
 
     let toolBar = <Toolbar 
+      drawerType={this.state.drawerType}
       toggleDrawer={this.toggleDrawer}
       toggleDropMenu={this.toggleDropMenu}
-      clickDash={this.dashboard}
+      dashboard={this.dashboard}
       sendCoins={this.sendCoins}
       receiveCoins={this.receiveCoins}
       changeWallet={this.changeWallet}

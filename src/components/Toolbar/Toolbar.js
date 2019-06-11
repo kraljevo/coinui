@@ -8,7 +8,7 @@ const Toolbar = props => {
         <header className="toolbar">
             <nav className="toolbar-navigation">
                 <DrawerToggle click={props.toggleDrawer}/>
-                <div className="toolbar-logo" onClick={props.clickDash}>
+                <div className="toolbar-logo" onClick={props.dashboard}>
                     KRALCO
                 </div>
                 <div className="nav-item" onClick={props.sendCoins}>

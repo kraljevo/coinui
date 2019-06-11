@@ -4,6 +4,7 @@
     align-items: center;
     width: 60px;
     height: 60px;
+    padding: 0 4px;
     justify-content: space-around;
     cursor: pointer;
 }
@@ -15,12 +16,12 @@
     border: none;
 }
 
-.drop-menu:focus {
+.drop-container:focus {
     outline: none;
 }
 
-.drop-menu:hover {
-    background: #6cb9c7;
+.drop-container:hover {
+    background-color: #0089a1;
 }
 
 @media screen and (max-width: 875px) {
