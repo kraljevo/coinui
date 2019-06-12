@@ -6,7 +6,7 @@
     -webkit-box-align: center;
     align-items: center;
     color: #ffffff;
-    background: #00a9c7;
+    background: linear-gradient(0deg, #007286 0%, #00a9c7 45%);
     height: 60px;
     width: 100%;
     top: 0;
@@ -105,6 +105,5 @@
 
     .toolbar {
         width: 100%;
-        background: linear-gradient(0deg, #007286 0%, #00a9c7 45%);
     }
 }
