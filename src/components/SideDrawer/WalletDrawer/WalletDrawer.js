@@ -1,32 +1,28 @@
 import React from 'react';
-
-import './WalletDrawer.css';
+import '../SideDrawer.css';
 
 const WalletDrawer = props => {
-    let names = props.wallets.map(item => {
-      return <WalletName 
-        key = {item.id}
-        wallet = {item} />
-    })
-
     return (
-        <div className="container">
+        <div className="drawer-container">
             <button className="back-button" onClick={props.backbtn}>
                 Back
             </button>
-            <nav className="wallet-drawer">
-                <ul>
-                    {names}
-                </ul>
-            </nav>
+            <div className="row-container">
+                <div className="row-item">
+                    <div className="row-label">Wallets:</div>
+                    <select className="row-select" name="wallets-name">
+                        <option defaultValue>Select Wallet</option>
+                        {props.wallets.map((key) => (
+                            <option>{key.name}</option>
+                        ))}
+                    </select>
+                </div>
+            </div>
+            <div className="submit-button-container">
+                <input className="submit-button" type="submit" value="Select Wallet" />
+            </div>
         </div>
     )
 }
-
-const WalletName = (props) => {
-    return (
-        <li><button>{props.wallet.name}</button></li>
-    );
-  }
 
 export default WalletDrawer;

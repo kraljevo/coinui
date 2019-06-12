@@ -1,18 +1,25 @@
 import React from 'react';
-import './NetworkDrawer.css';
+import '../SideDrawer.css';
 
 const NetworkDrawer = props => {
     return (
-        <div className="container">
+        <div className="drawer-container">
             <button className="back-button" onClick={props.backbtn}>
                 Back
             </button>
-            <nav className="network-drawer">
-                <select className="net-select">
-                    <option defaultValue>Select a Network</option>
-                    
-                </select>
-            </nav>
+            <div className="drawer">
+                <div className="row-container">
+                    <select className="row-select" name="network-name">
+                        <option defaultValue>Select Network</option>
+                        {Object.keys(props.networks).map((key) => (
+                            <option>{key}</option>
+                        ))}
+                    </select>
+                </div>
+            </div>
+            <div className="submit-button-container">
+                <input className="submit-button" type="submit" value="Select Network"/>
+            </div>
         </div>
     )
 }

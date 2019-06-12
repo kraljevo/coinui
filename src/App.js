@@ -18,17 +18,17 @@ export default class App extends Component {
     drawerType: 'dashboard',
     coin: [],
     wallet: [{
-      id: 1,
       name: "Kral's Wallet"
     }, {
-      id: 2,
       name: "Santa's Wallet"
     }, {
-      id: 3,
       name: "I'm out of names :|"
     }],
-    username: 'John Doe',
-    email: 'j.doe@gmail.com'
+    networks: [],
+    userInfo: {
+      name: 'John Doe',
+      email: 'j.doe@gmail.com'
+    }
   }
 
   componentDidMount() {
@@ -37,6 +37,10 @@ export default class App extends Component {
       .then(res => {
         const coin = res.data.DISPLAY;
         this.setState({coin: coin});
+        
+      })
+      .catch(err => {
+        console.log(err)
       })
   }
 
@@ -106,8 +110,8 @@ export default class App extends Component {
 
     let dropMenu = <DropMenu 
       show={this.state.showDropMenu}
-      username={this.state.username}
-      useremail={this.state.email}/>
+      username={this.state.userInfo.name}
+      useremail={this.state.userInfo.email}/>
 
     let coinData = <DataDivs 
       coins={this.state.coin}/>
@@ -140,6 +144,8 @@ export default class App extends Component {
       }
       if(name === 'buy'){
         return <ReceiveDrawer 
+          coins={this.state.coin}
+          networks={this.state.networks}
           backbtn={this.menuBackButton}/>
       }
       if(name === 'wallets'){
@@ -149,6 +155,7 @@ export default class App extends Component {
       }
       if(name === 'networks'){
         return <NetworkDrawer 
+          networks={this.state.networks}
           backbtn={this.menuBackButton}/>
       }
     }

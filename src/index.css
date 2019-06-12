@@ -4,7 +4,8 @@ html {
 }
 
 button:focus,
-select:focus {
+select:focus,
+input:focus {
   outline:0;
 }
 
