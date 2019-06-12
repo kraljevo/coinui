@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/coinui/precache-manifest.157c24b60c2b3ea8798cce553ef76e95.js"
+  "/coinui/precache-manifest.c13e9aef2a6a931b83bceaff5d737920.js"
 );
 
 self.addEventListener('message', (event) => {
