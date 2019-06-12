@@ -9,12 +9,17 @@ const NetworkDrawer = props => {
             </button>
             <div className="drawer">
                 <div className="row-container">
-                    <select className="row-select" name="network-name">
-                        <option defaultValue>Select Network</option>
-                        {Object.keys(props.networks).map((key) => (
-                            <option>{key}</option>
-                        ))}
-                    </select>
+                    <div className="row-item">
+                        <div className="row-label">
+                            Network:
+                        </div>
+                        <select className="row-select" name="network-name">
+                            <option defaultValue>Select Network</option>
+                            {Object.keys(props.networks).map((key) => (
+                                <option>{key}</option>
+                            ))}
+                        </select>
+                    </div>
                 </div>
             </div>
             <div className="submit-button-container">

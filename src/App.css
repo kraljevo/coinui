@@ -1,6 +1,6 @@
 .App {
     font-family: Palatino, sans-serif;
-    min-width: 360px;
+    min-width: 320px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -12,7 +12,7 @@ input, select {
 }
 
 .App-content {
-    width: 60%;
+    width: 50%;
     margin: 80px auto 0;
     border: 1px solid #00a9c734;
     border-radius: 5px;
@@ -21,7 +21,6 @@ input, select {
 @media screen and (max-width: 875px){
     .App-content {
         width: 100%;
-        min-width: 350px;
         border: none;
     }
 }

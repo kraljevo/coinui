@@ -2,7 +2,7 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    width: 50px;
+    min-width: 60px;
     height: 60px;
     padding: 0 4px;
     justify-content: space-around;
@@ -11,9 +11,13 @@
 
 .drop-menu-btn {
     cursor: pointer;
-    width: 60;
+    width: 60px;
     background: transparent;
     border: none;
+}
+
+#down-arrow {
+    transform: scale(1.25, 0.5);
 }
 
 .drop-container:focus {
@@ -21,12 +25,16 @@
 }
 
 .drop-container:hover {
-    background-color: #0089a1;
+    background: linear-gradient(0deg, #004450 0%, #0089a1 45%);
 }
 
 @media screen and (max-width: 875px) {
     .drop-container {
         position: absolute;
         right: 0;
+    }
+
+    #down-arrow {
+        display: none;
     }
 }
